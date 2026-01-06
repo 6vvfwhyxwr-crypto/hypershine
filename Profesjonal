@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyper Shine Detailing | Detailing Samochodowy Warszawa</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0d0d0d;
+    color:#fff;
+}
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#000;
+    padding:15px;
+    text-align:center;
+    z-index:1000;
+}
+nav a{
+    color:#fff;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress") center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+header h1{color:#ffd700;font-size:3.2em;}
+header p{font-size:1.3em;}
+.btn{
+    display:inline-block;
+    background:#ffd700;
+    color:#000;
+    padding:15px 30px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:15px;
+}
+section{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+h2{text-align:center;color:#ffd700;margin-bottom:40px;}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:#1a1a1a;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+.price{
+    font-size:1.4em;
+    color:#ffd700;
+}
+.review{
+    font-style:italic;
+    opacity:.95;
+}
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+input,select,textarea{
+    padding:12px;
+    border-radius:6px;
+    border:none;
+}
+button{
+    padding:15px;
+    background:#ffd700;
+    border:none;
+    font-weight:bold;
+    border-radius:6px;
+}
+footer{
+    background:#000;
+    padding:30px;
+    text-align:center;
+}
+.floating{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+.floating a{
+    font-size:22px;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    text-align:center;
+}
+.call{background:#ffd700;color:#000;}
+.whatsapp{background:#25D366;color:#fff;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#pakiety">Pakiety</a>
+<a href="#onas">O nas</a>
+<a href="#opinie">Opinie</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<header>
+<div>
+<h1>Hyper Shine Detailing</h1>
+<p>Profesjonalny detailing samochodowy klasy premium</p>
+<p>Warszawa i okolice</p>
+<a href="#kontakt" class="btn">Umów wizytę</a>
+</div>
+</header>
+
+<!-- PAKIETY -->
+<section id="pakiety">
+<h2>Pakiety detailingowe</h2>
+<div class="grid">
+<div class="card">
+<h3>Pakiet Basic</h3>
+<p>Mycie detailingowe + czyszczenie wnętrza</p>
+<p class="price">od 299 zł</p>
+</div>
+<div class="card">
+<h3>Pakiet Premium</h3>
+<p>Detailing wnętrza + korekta lakieru</p>
+<p class="price">od 799 zł</p>
+</div>
+<div class="card">
+<h3>Pakiet Ceramic</h3>
+<p>Pełna korekta lakieru + powłoka ceramiczna</p>
+<p class="price">od 1499 zł</p>
+</div>
+</div>
+</section>
+
+<!-- O NAS -->
+<section id="onas">
+<h2>O nas</h2>
+<p style="text-align:center;max-width:800px;margin:auto;">
+Hyper Shine Detailing to studio detailingowe stworzone z pasji do motoryzacji
+i perfekcyjnego wyglądu samochodów. Pracujemy na sprawdzonych kosmetykach
+klasy premium i przykładamy ogromną wagę do detali.
+<br><br>
+Każde auto traktujemy indywidualnie, oferując usługi dopasowane do realnych potrzeb
+klienta i stanu pojazdu.
+</p>
+</section>
+
+<!-- OPINIE -->
+<section id="opinie">
+<h2>Opinie klientów</h2>
+<div class="grid">
+<div class="card review">
+„Auto wygląda lepiej niż w dniu odbioru z salonu. Pełen profesjonalizm.” ⭐⭐⭐⭐⭐
+<br><strong>— Michał K.</strong>
+</div>
+<div class="card review">
+„Korekta lakieru i ceramika zrobione perfekcyjnie. Polecam w 100%.” ⭐⭐⭐⭐⭐
+<br><strong>— Paweł S.</strong>
+</div>
+<div class="card review">
+„Najlepszy detailing w Warszawie. Świetny kontakt i efekt WOW.” ⭐⭐⭐⭐⭐
+<br><strong>— Anna D.</strong>
+</div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt">
+<h2>Kontakt</h2>
+
+<form action="mailto:kontakt@hypershinedetailing.pl" method="post" enctype="text/plain">
+<input type="text" placeholder="Imię" required>
+<input type="tel" placeholder="Telefon" required>
+<select required>
+<option value="">Wybierz usługę</option>
+<option>Pakiet Basic</option>
+<option>Pakiet Premium</option>
+<option>Pakiet Ceramic</option>
+<option>Inna usługa</option>
+</select>
+<textarea placeholder="Wiadomość"></textarea>
+<button type="submit">Wyślij zapytanie</button>
+</form>
+
+<p style="text-align:center;margin-top:25px;">
+📞 <strong>531 334 064</strong><br>
+📧 kontakt@hypershinedetailing.pl<br>
+📍 Warszawa<br>
+🕒 Pon–Pt 9:00–18:00 | Sobota 9:00–14:00
+</p>
+</section>
+
+<footer>
+© 2026 Hyper Shine Detailing
+</footer>
+
+<div class="floating">
+<a href="tel:531334064" class="call">📞</a>
+<a href="https://wa.me/48531334064" class="whatsapp">💬</a>
+</div>
+
+</body>
+</html>
