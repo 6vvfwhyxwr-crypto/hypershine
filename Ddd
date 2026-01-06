@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Hyper Shine Detailing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { margin:0; font-family: Arial, sans-serif; background:#111; color:#fff; }
+header {
+  background: url(https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress) center/cover fixed;
+  height:100vh; text-align:center; display:flex; flex-direction:column;
+  justify-content:center; align-items:center;
+}
+header h1 { font-size:3rem; color:#ffd700; margin:0; }
+header p { font-size:1.3rem; margin:10px auto; }
+.btn { background:#ffd700; color:#000; padding:15px 30px; text-decoration:none; font-weight:700; border-radius:5px; }
+section { padding:60px 20px; max-width:1100px; margin:auto; }
+h2 { text-align:center; color:#ffd700; margin-bottom:30px; }
+.services, .portfolio { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.card {
+  background:#1c1c1c; border-radius:8px; padding:20px; width:280px; text-align:center;
+}
+.card img { max-width:100%; border-radius:6px; }
+input, select, textarea {
+  padding:12px; border-radius:5px; border:none; width:100%;
+}
+button {
+  background:#ffd700; color:#000; border:none; padding:15px; border-radius:5px;
+  font-weight:700; cursor:pointer;
+}
+.fixed-buttons {
+  position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:12px;
+}
+.fixed-buttons a { text-decoration:none; font-size:23px; padding:15px; border-radius:50%; text-align:center; }
+.call { background:#ffd700; color:#000; }
+.whatsapp { background:#25D366; color:#fff; }
+@media (max-width:768px) {
+  .services, .portfolio { flex-direction:column; align-items:center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<header>
+  <h1>Hyper Shine Detailing</h1>
+  <p>Profesjonalny Detailing Samochodowy – błysk, jaki robisz wrażenie</p>
+  <a href="#kontakt" class="btn">Umów wizytę</a>
+</header>
+
+<!-- Usługi -->
+<section>
+  <h2>Nasze Usługi</h2>
+  <div class="services">
+    <div class="card">Detailing wnętrza</div>
+    <div class="card">Korekta lakieru</div>
+    <div class="card">Powłoki ceramiczne</div>
+    <div class="card">Mycie detailingowe</div>
+    <div class="card">Ozonowanie wnętrza</div>
+    <div class="card">Przygotowanie do sprzedaży</div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section>
+  <h2>Portfolio Przed / Po</h2>
+  <div class="portfolio">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress" alt="Przed">
+      <p>Przed</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/170812/pexels-photo-170812.jpeg?auto=compress" alt="Po">
+      <p>Po</p>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <form action="mailto:kontakt@hypershinedetailing.pl" method="post" enctype="text/plain">
+    <input type="text" name="Imię" placeholder="Imię" required>
+    <input type="tel" name="Telefon" placeholder="Numer telefonu" required>
+    <select name="Usługa" required>
+      <option value="">Wybierz usługę</option>
+      <option>Detailing wnętrza</option>
+      <option>Korekta lakieru</option>
+      <option>Powłoka ceramiczna</option>
+      <option>Mycie detailingowe</option>
+      <option>Ozonowanie wnętrza</option>
+    </select>
+    <textarea name="Wiadomość" placeholder="Dodatkowe informacje"></textarea>
+    <button type="submit">Wyślij zapytanie</button>
+  </form>
+</section>
+
+<footer style="text-align:center; padding:20px 0; background:#000">
+  © 2026 Hyper Shine Detailing • tel. 531 334 064
+</footer>
+
+<!-- Floating Buttons -->
+<div class="fixed-buttons">
+  <a class="call" href="tel:531334064">📞</a>
+  <a class="whatsapp" href="https://wa.me/48531334064">💬</a>
+</div>
+
+</body>
+</html>
